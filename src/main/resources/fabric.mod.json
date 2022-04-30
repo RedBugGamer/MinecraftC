@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "minecraft_c",
+  "version": "${version}",
+  "name": "MinecraftC",
+  "description": "Control Minecraft using a websocket!",
+  "authors": [
+    "RedBugGamer"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/MinecraftC/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.redbuggamer.minecraftc.client.MinecraftCClient"
+    ],
+    "main": [
+      "de.redbuggamer.minecraftc.MinecraftC"
+    ]
+  },
+  "mixins": [
+    "MinecraftC.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18"
+  }
+}
